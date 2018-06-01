@@ -8,7 +8,7 @@ Raven.config('me too thanks').install();
   const client = new Discord.Client();
 const cheerio = require('cheerio'),
      snekfetch = require('snekfetch'),
-      querystring = require('querystring');
+     querystring = require('querystring');
 const config = require("./config.json");
 const http = require('http');
 const express = require('express');
@@ -72,28 +72,28 @@ if (message.content.toLowerCase() == (config.prefix + "help") || message.content
   footer: {
   icon_url: client.user.avatarURL,
   text: 'SmartBot, made by SmartiePlays#5434'}}});
-  } else if (message.content.toLowerCase() == (config.prefix + "help ping") || message.content.toLowerCase() == (altfix + "help ping")) {
-    message.channel.send("", {embed: {color: 0xffffff, description: "```\nping\n```\nPing SmartBot to see if it's alive, and its response time."}});
-  } else if (message.content.toLowerCase() == (config.prefix + "help embed") || message.content.toLowerCase() == (altfix + "help embed")) {
-    message.channel.send("", {embed: {color: 0x7fffd4, description: "```\nembed\n```\nIt's like a `say` command, but better... because it's an embed!\n`Arguments`\nsb>embed {hex color} | {content}"}});
-  } else if (message.content.toLowerCase() == (config.prefix + "help info") || message.content.toLowerCase() == (altfix + "help info")) {
-    message.channel.send("", {embed: {color: 0x2f4f4f, description: "```\ninfo\n```\nGet to know more about SmartBot!"}});
-  } else if (message.content.toLowerCase() == (config.prefix + "help ok google") || message.content.toLowerCase() == (altfix + "help ok google")) {
-    message.channel.send("", {embed: {color: 0x7fff00, description: "```\nok google\n```\nSearch the web with Google.\n`Arguments`\nok google {search term}"}});
-  } else if (message.content.toLowerCase() == (config.prefix + "help 8ball") || message.content.toLowerCase() == (altfix + "help 8ball")) {
-    message.channel.send("", {embed: {color: 0x3c006a, description: "```\n@SmartBot aka 8ball\n```\nGet an answer from the magical 8ball :8ball:\n`Arguments`\n@SmartBot {question (optional)}"}});
-  } else if (message.content.toLowerCase() == (config.prefix + "help kick") || message.content.toLowerCase() == (altfix + "help kick")) {
-    message.channel.send("", {embed: {color: 0xff0000, description: "```\nkick\n```\nKick a user.\n**Requirements**\nKICK_MEMBERS permission is required.\nSmartBot must have the KICK_MEMBERS permission.\n`Arguments`\nsb>kick @mention {reason}"}});
-  } else if (message.content.toLowerCase() == (config.prefix + "help ban") || message.content.toLowerCase() == (altfix + "help ban")) {
-    message.channel.send("", {embed: {color: 0xff0000, description: "```\nban\n```\nBan a user.\n**Requirements**\nBAN_MEMBERS permission is required.\nSmartBot must have the BAN_MEMBERS permission.\n`Arguments`\nsb>ban @mention {reason}"}});
-  } else if (message.content.toLowerCase() == (config.prefix + "help channel") || message.content.toLowerCase() == (altfix + "help channel")) {
-    message.channel.send("", {embed: {color: 0xff8b00, description: "```\nchannel\n```\nCreate a channel\n**Requirements**\nMANAGE_CHANNELS permission is required.\nSmartBot must have the MANAGE_CHANNELS permission.\n`Arguments`\nsb>channel {type (text or voice)} {name}"}});
-    } else if (message.content.toLowerCase() == (config.prefix + "help nickname") || message.content.toLowerCase() == (altfix + "help nickname")) {
-    message.channel.send("", {embed: {color: 0xff8b00, description: "```\nnickname\n```\nChange the bot's nickname.\n**Requirements**\nMANAGE_NICKNAMES permission is required.\nSmartBot must have the CHANGE_NICKNAME permission.\n`Arguments`\nsb>nickname {nickname}"}});
-    } else if (message.content.toLowerCase() == (config.prefix + "help emoji") || message.content.toLowerCase() == (altfix + "help emoji")) {
-    message.channel.send("", {embed: {color: 0xff8b00, description: "```\nemoji```\nCreate an emoji for your guild.\n**Requirements**\nMANAGE_EMOJIS permission is required.\nSmartBot must have the MANAGE_EMOJIS permission.\n`Arguments`\nsb>emoji {emoji name} <Attachment Required>"}});
-  } else if (message.content.toLowerCase() == (config.prefix + "help purge") || message.content.toLowerCase() == (altfix + "help purge")) {
-    message.channel.send("", {embed: {color: 0xff0000, description: "```\npurge\n```\nDelete the last `x` messages in a channel.\n**Requirements**\nMANAGE_MESSAGES permission is required.\nSmartBot must have the MANAGE_MESSAGES permission.\n`Arguments`\nsb>purge {# of messages || @mention}"}});
+  	} else if (message.content.toLowerCase() == (config.prefix + "help ping") || message.content.toLowerCase() == (altfix + "help ping")) {
+    		message.channel.send("", {embed: {color: 0xffffff, description: "```\nping\n```\nPing SmartBot to see if it's alive, and its response time."}});
+  	} else if (message.content.toLowerCase() == (config.prefix + "help embed") || message.content.toLowerCase() == (altfix + "help embed")) {
+    		message.channel.send("", {embed: {color: 0x7fffd4, description: "```\nembed\n```\nIt's like a `say` command, but better... because it's an embed!\n`Arguments`\nsb>embed {hex color} | {content}"}});
+  	} else if (message.content.toLowerCase() == (config.prefix + "help info") || message.content.toLowerCase() == (altfix + "help info")) {
+    		message.channel.send("", {embed: {color: 0x2f4f4f, description: "```\ninfo\n```\nGet to know more about SmartBot!"}});
+  	} else if (message.content.toLowerCase() == (config.prefix + "help ok google") || message.content.toLowerCase() == (altfix + "help ok google")) {
+    		message.channel.send("", {embed: {color: 0x7fff00, description: "```\nok google\n```\nSearch the web with Google.\n`Arguments`\nok google {search term}"}});
+  	} else if (message.content.toLowerCase() == (config.prefix + "help 8ball") || message.content.toLowerCase() == (altfix + "help 8ball")) {
+    		message.channel.send("", {embed: {color: 0x3c006a, description: "```\n@SmartBot aka 8ball\n```\nGet an answer from the magical 8ball :8ball:\n`Arguments`\n@SmartBot {question (optional)}"}});
+  	} else if (message.content.toLowerCase() == (config.prefix + "help kick") || message.content.toLowerCase() == (altfix + "help kick")) {
+    		message.channel.send("", {embed: {color: 0xff0000, description: "```\nkick\n```\nKick a user.\n**Requirements**\nKICK_MEMBERS permission is required.\nSmartBot must have the KICK_MEMBERS permission.\n`Arguments`\nsb>kick @mention {reason}"}});
+  	} else if (message.content.toLowerCase() == (config.prefix + "help ban") || message.content.toLowerCase() == (altfix + "help ban")) {
+    		message.channel.send("", {embed: {color: 0xff0000, description: "```\nban\n```\nBan a user.\n**Requirements**\nBAN_MEMBERS permission is required.\nSmartBot must have the BAN_MEMBERS permission.\n`Arguments`\nsb>ban @mention {reason}"}});
+  	} else if (message.content.toLowerCase() == (config.prefix + "help channel") || message.content.toLowerCase() == (altfix + "help channel")) {
+    		message.channel.send("", {embed: {color: 0xff8b00, description: "```\nchannel\n```\nCreate a channel\n**Requirements**\nMANAGE_CHANNELS permission is required.\nSmartBot must have the MANAGE_CHANNELS permission.\n`Arguments`\nsb>channel {type (text or voice)} {name}"}});
+  	} else if (message.content.toLowerCase() == (config.prefix + "help nickname") || message.content.toLowerCase() == (altfix + "help nickname")) {
+    		message.channel.send("", {embed: {color: 0xff8b00, description: "```\nnickname\n```\nChange the bot's nickname.\n**Requirements**\nMANAGE_NICKNAMES permission is required.\nSmartBot must have the CHANGE_NICKNAME permission.\n`Arguments`\nsb>nickname {nickname}"}});
+  	} else if (message.content.toLowerCase() == (config.prefix + "help emoji") || message.content.toLowerCase() == (altfix + "help emoji")) {
+    		message.channel.send("", {embed: {color: 0xff8b00, description: "```\nemoji```\nCreate an emoji for your guild.\n**Requirements**\nMANAGE_EMOJIS permission is required.\nSmartBot must have the MANAGE_EMOJIS permission.\n`Arguments`\nsb>emoji {emoji name} <Attachment Required>"}});
+  	} else if (message.content.toLowerCase() == (config.prefix + "help purge") || message.content.toLowerCase() == (altfix + "help purge")) {
+    		message.channel.send("", {embed: {color: 0xff0000, description: "```\npurge\n```\nDelete the last `x` messages in a channel.\n**Requirements**\nMANAGE_MESSAGES permission is required.\nSmartBot must have the MANAGE_MESSAGES permission.\n`Arguments`\nsb>purge {# of messages || @mention}"}});
 }
   
   if (message.content == (config.prefix + "website") || message.content == (altfix + "website")) {
@@ -114,7 +114,7 @@ if (message.content.toLowerCase() == (config.prefix + "help") || message.content
  
   if (message.content.toLowerCase().startsWith(config.prefix + "gameset") || message.content.toLowerCase().startsWith(altfix + "gameset")) {
       if (message.author.id !== '374245143655612428') return;
-	client.user.setPresence({ game: { name: (args) , type: 0} });
+	client.user.setActivty(args);
   };
   
   if (message.content.toLowerCase() == (config.prefix + "b4nzy") || message.content == (altfix + "b4nzy")) {
